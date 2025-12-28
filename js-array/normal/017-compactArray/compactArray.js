@@ -16,6 +16,12 @@ function compactArray(arr) {
   return arr;
 }
 
+//! Variant 2
+
+function compactArray(arr) {
+  return arr.filter(Boolean);
+}
+
 console.log(compactArray([0, 1, false, 2, "", 3]));
 // [1, 2, 3]
 
